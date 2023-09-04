@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p th:text="${getDNA}"></p>
+
+<form method="post" id="form">
+    <input type ="text" name="userInput"/>
+    <button type="submit" id="button" >Submit1</button>
+</form>
+
+<p th:text="${getRNA}"></p>
+
+<div th:if="${isPassed}">
+<form action="/TranscriptionAndTranslation/a" method="post" id="form2">
+    <input type ="text" name="userInput2"/>
+    <button type="submit" id="button2" >Submit2</button>
+</form>
+
+<p th:text="${getPRO}"></p>
+</div>
+
+
+</body>
+</html>
